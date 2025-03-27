@@ -6,7 +6,6 @@
 
 body {
     height: 100vh;
-    max-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -84,16 +83,12 @@ h2 {
 
 @keyframes zoomIn {
     0% {
-        opacity: 0;
+        opacity: 0.9;
         transform: scale(0.5);
     }
 
-    50% {
-        opacity: 1;
-    }
-
     100% {
-        opacity: 1;
+        opacity: 0.5;
         transform: scale(1);
     }
 }
@@ -113,3 +108,10 @@ h2 {
     50% { text-shadow: 0 0 20px #ff00ff, 0 0 40px #ff00ff; }
     100% { text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff; }
 }
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 4rem;
+    }
+  }
