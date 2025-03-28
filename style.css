@@ -109,8 +109,7 @@ h2 {
     100% { text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff; }
 }
 
-/* On screens that are 600px or less, set the background color to olive */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
     h1 {
         font-size: 4rem;
     }
